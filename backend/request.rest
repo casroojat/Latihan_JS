@@ -1,0 +1,25 @@
+GET http://localhost:5000/products
+
+###
+GET http://localhost:5000/products/7cba15a8-5eee-42bf-8a3e-0a3bdd6da8b9
+
+###
+POST http://localhost:5000/products
+Content-Type: application/json
+
+{
+    "product_name": "Samsung",
+    "product_price": 50000
+}
+
+###
+PATCH http://localhost:5000/products/7cba15a8-5eee-42bf-8a3e-0a3bdd6da8b9
+Content-Type: application/json
+
+{
+    "product_name": "Samsung Updated",
+    "product_price": 50000
+}
+
+###
+DELETE http://localhost:5000/products/7cba15a8-5eee-42bf-8a3e-0a3bdd6da8b9
