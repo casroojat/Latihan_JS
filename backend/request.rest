@@ -51,3 +51,31 @@ Content-Type: application/json
 
 ###
 DELETE http://localhost:5000/categories/df21b411-f6cf-4481-a99d-ee3b60518384
+
+// POST
+###
+GET http://localhost:5000/post
+
+###
+GET http://localhost:5000/post/1
+
+###
+POST http://localhost:5000/categories
+Content-Type: application/json
+
+{
+    "category_name": "HP",
+    "category_information": "tess loremp impsum fgebttrb"
+}
+
+###
+PATCH http://localhost:5000/categories/df21b411-f6cf-4481-a99d-ee3b60518384
+Content-Type: application/json
+
+{
+    "category_name": "HP Updated",
+    "category_information": "tess loremp impsum fgebttrb fwgrg"
+}
+
+###
+DELETE http://localhost:5000/categories/df21b411-f6cf-4481-a99d-ee3b60518384
