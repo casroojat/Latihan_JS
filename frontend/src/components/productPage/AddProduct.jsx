@@ -23,11 +23,11 @@ const AddProduct = () => {
             <div className="flex flex-col">
                 <div className="mb-5">
                     <label className="font-bold text-slate-700">Product Name</label>
-                    <input type="text" className="w-full py-3 mt-1 border border-slate-200 rounded-lg px-3 focus:outline-none focus:border-slate-500 hover:shadow" placeholder='Product Name' value={productName} onChange={(e)=>setProductName(e.target.value)}/>
+                    <input type="text" required className="w-full py-3 mt-1 border border-slate-200 rounded-lg px-3 focus:outline-none focus:border-slate-500 hover:shadow" placeholder='Product Name' value={productName} onChange={(e)=>setProductName(e.target.value)}/>
                 </div>
                 <div className="mb-5">
                     <label className="font-bold text-slate-700">Price</label>
-                    <input type="text" className="w-full py-3 mt-1 border border-slate-200 rounded-lg px-3 focus:outline-none focus:border-slate-500 hover:shadow" placeholder='Price' value={productPrice} onChange={(e)=>setProductPrice(e.target.value)}/>
+                    <input type="text" required className="w-full py-3 mt-1 border border-slate-200 rounded-lg px-3 focus:outline-none focus:border-slate-500 hover:shadow" placeholder='Price' value={productPrice} onChange={(e)=>setProductPrice(e.target.value)}/>
                 </div>
                 <button className='w-full py-3 font-bold text-white bg-indigo-600 hover:bg-indigo-500 rounded-lg border border-indigo-500 hover:shadow' type="submit">Save</button>
             </div>
