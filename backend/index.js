@@ -4,6 +4,7 @@ import dotenv from 'dotenv';
 import fileUpload from 'express-fileupload';
 import ProductRoutes from './routes/ProductRoutes.js'
 import CategoryRoutes from './routes/CategoryRoute.js'
+import PostRoutes from './routes/PostRoute.js'
 
 dotenv.config();
 
@@ -14,6 +15,7 @@ app.use(express.json());
 app.use(fileUpload());
 app.use(ProductRoutes);
 app.use(CategoryRoutes);
+app.use(PostRoutes);
 app.use(express.static("public"));
 
 
